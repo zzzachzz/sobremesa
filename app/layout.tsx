@@ -16,6 +16,9 @@ export const metadata = {
   title: "Sobremesa",
   description: "Games that celebrate the art of lingering at the table.",
   manifest: "/manifest.json",
+  icons: {
+    apple: "/icon-512.png",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
