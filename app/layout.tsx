@@ -28,16 +28,15 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="apple-touch-icon" href="/icon-512.png" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
